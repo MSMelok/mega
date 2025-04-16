@@ -1,236 +1,288 @@
-8<!DOCTYPE html>
-<html lang="en" dir="rtl">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <link rel="shortcut icon" href="images/repair.png" type="image/x-icon">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="ميجا نت كافيه - خدمات إصلاح الكمبيوتر واللابتوب وتحميل الألعاب والميديا في الدخيلة">
+   <meta name="keywords" content="نت كافيه, ألعاب, إصلاح كمبيوتر, لابتوب, طباعة, خدمات حكومية">
+   <meta name="author" content="Muhammad Meluk">
+   
    <title>ميجا - نت كافيه</title>
+   <link rel="icon" type="image/png" sizes="32x32" href="./images/32x32.png">
 
-   <!-- font awesome cdn link  -->
+   <!-- Font Awesome CDN link -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+   
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+   
+   <!-- LightGallery CSS -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
-
-   <!-- custom css file link  -->
+   
+   <!-- Animate on Scroll Library -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
+   <!-- Custom CSS file -->
    <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
-
-   <!-- header section starts  -->
-
+   <!-- Header Section Starts -->
    <header class="header">
-
       <div class="contact-info">
-         <p> <i class="fas fa-map"></i> الدخيلة, بجوار فرع اورنج </p>
-         <p> <i class="fas fa-envelope"></i> MegaRepair@gmail.com </p>
-         <p> <i class="fas fa-phone"></i> 01551085617 </p>
+         <p><i class="fas fa-map-marker-alt"></i> الدخيلة, بجوار فرع اورنج</p>
+         <p><i class="fas fa-envelope"></i> MegaRepair@gmail.com</p>
+         <p><i class="fas fa-phone-alt"></i> 01551085617</p>
       </div>
 
       <nav class="navbar">
-
-         <a href="#home" class="logo"> <i class="fas fa-tools"></i> ميجا </a>
+         <a href="#home" class="logo">
+            <i class="fas fa-gamepad"></i> ميجا
+         </a>
 
          <div class="links">
-            <a href="#home">الرئيسية</a>
-            <a href="#about">وصف الخدمة</a>
-            <a href="#services">خدماتنا</a>
-            <a href="#contact">تواصل معانا</a>
+            <a href="#home" class="nav-link active">الرئيسية</a>
+            <a href="#about" class="nav-link">وصف الخدمة</a>
+            <a href="#services" class="nav-link">خدماتنا</a>
+            <a href="#contact" class="nav-link">تواصل معانا</a>
          </div>
 
-         <div id="menu-btn" class="fa fa-bars"></div>
-
+         <div class="nav-actions">
+            <label class="theme-switch" for="theme-toggle">
+               <input type="checkbox" id="theme-toggle">
+               <span class="slider">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+               </span>
+            </label>
+            <div id="menu-btn" class="fas fa-bars"></div>
+         </div>
       </nav>
-
    </header>
+   <!-- Header Section Ends -->
 
-   <!-- header section ends -->
-
-   <!-- home section starts  -->
-
-   <section class="home" id="home" style="direction: rtl;">
-
-      <div class="image">
-         <img src="images/home-img.png" alt="home-img.png">
+   <!-- Home Section Starts -->
+   <section class="home" id="home">
+      <div class="home-content">
+         <div class="content" data-aos="fade-left" data-aos-duration="1000">
+            <h1>في مشكلة ؟</h1>
+            <h2>متقلقش سيبها علينا.</h2>
+            <p>أفضل خدمة صيانة وإصلاح أجهزة الكمبيوتر واللابتوب</p>
+            <a href="#about" class="btn">وصف الخدمة <i class="fas fa-arrow-left"></i></a>
+         </div>
+         
+         <div class="image" data-aos="fade-right" data-aos-duration="1000">
+            <div class="image-wrapper">
+               <img src="images/home-img.png" alt="كمبيوتر ميجا نت كافيه">
+            </div>
+         </div>
       </div>
-
-      <div class="content">
-         <h3>
-            في مشكلة ؟
-            <br>
-            متقلقش سيبها علينا.
-         </h3>
-         <a href="#about" class="btn">وصف الخدمة</a>
-      </div>
-
    </section>
+   <!-- Home Section Ends -->
 
-   <!-- home section ends -->
-
-   <div style="width: 100%; height: 180px "></div>
-
-   <!-- about section starts  -->
-
+   <!-- About Section Starts -->
    <section class="about" id="about">
-
-      <div class="content">
-         <h3>أفضل جودة لاصلاح المشاكل</h3>
-         <p>في ميجا بنضمنلك أفضل جودة ممكنة للخدمة سواء كانت سوفت-وير او هارد-وير,
-            <br>
-            تقدر تشرفنا و توضح المشكلة و هيتم حل المشكلة في اسرع وقت ممكن.
-         </p>
-         <a href="#services" class="btn">شوف خدمات ميجا</a>
+      <div class="about-content">
+         <div class="image" data-aos="fade-left" data-aos-duration="1000">
+            <img src="images/about-img.png" alt="خدمات ميجا للصيانة">
+         </div>
+         
+         <div class="content" data-aos="fade-right" data-aos-duration="1000">
+            <h2 class="section-title">أفضل جودة <span>لاصلاح المشاكل</span></h2>
+            <p>في ميجا بنضمنلك أفضل جودة ممكنة للخدمة سواء كانت سوفت-وير او هارد-وير.</p>
+            <p>تقدر تشرفنا و توضح المشكلة و هيتم حل المشكلة في اسرع وقت ممكن.</p>
+            <ul class="features">
+               <li><i class="fas fa-check-circle"></i> خبرة سنين في مجال الصيانة</li>
+               <li><i class="fas fa-check-circle"></i> هتلاقي خدمة مميزة من اهل التخصص</li>
+               <li><i class="fas fa-check-circle"></i> بنستخدم قطع غيار أصلية بجودة عالية</li>
+               <li><i class="fas fa-check-circle"></i> بياناتك و جهازك في امان</li>
+            </ul>
+            <a href="#services" class="btn">شوف خدمات ميجا <i class="fas fa-arrow-left"></i></a>
+         </div>
       </div>
-
-      <div class="image">
-         <img src="images/about-img.png" alt="about-MEGA-service1.svg">
-      </div>
-
    </section>
+   <!-- About Section Ends -->
 
-   <!-- about section ends -->
-   <div style="width: 100%; height: 180px "></div>
-
-
-   <!-- services section starts  -->
-
+   <!-- Services Section Starts -->
    <section class="services" id="services">
-
-      <h1 class="heading">خدم<span>اتنا</span> </h1>
-
+      <h2 class="section-title">خدم<span>اتنا</span></h2>
+      <p class="section-desc">بنقدم مجموعة متكاملة من الخدمات لتلبية احتياجاتك</p>
+      
       <div class="box-container">
-
-         <div class="box">
-            <img src="images/service-1.svg" alt="MEGA-services1.svg">
+         <div class="box" data-aos="zoom-in" data-aos-duration="800">
+            <div class="icon">
+               <img src="images/service-1.svg" alt="إصلاح أعطال الكمبيوتر">
+            </div>
             <h3>إصلاح أعطال الكمبيوتر</h3>
             <p>إصلاح أعطال أجهزة الكمبيوتر المكتبية.</p>
          </div>
 
-         <div class="box">
-            <img src="images/service-2.svg" alt="MEGA-services2.svg">
-            <h3>إصلاح أعطال  أجهزة اللابتوب</h3>
+         <div class="box" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+            <div class="icon">
+               <img src="images/service-2.svg" alt="إصلاح أعطال اللابتوب">
+            </div>
+            <h3>إصلاح أعطال اللابتوب</h3>
             <p>إصلاح أعطال أجهزة الكمبيوتر المحمولة.</p>
          </div>
 
-         <div class="box">
-            <img src="images/service-3.png" alt="MEGA-services3.svg">
+         <div class="box" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+            <div class="icon">
+               <i class="fas fa-shield-alt"></i>
+            </div>
             <h3>إصلاح مشاكل النظام</h3>
             <p>إصلاح مشاكل النظام و ازالة الملفات الضارة.</p>
          </div>
 
-         <div class="box">
-            <img src="images/service-4.svg" alt="MEGA-services4.svg">
+         <div class="box" data-aos="zoom-in" data-aos-duration="800">
+            <div class="icon">
+               <img src="images/service-4.svg" alt="تحميل الألعاب">
+            </div>
             <h3>تحميل الألعاب</h3>
             <p>تحميل أحدث الالعاب و البرامج.</p>
          </div>
 
-         <div class="box">
-            <img src="images/service-5.svg" alt="MEGA-services5.svg">
-            <h3>تحميل ميديا</h3>
+         <div class="box" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+            <div class="icon">
+               <img src="images/service-5.svg" alt="تحميل ميديا">
+            </div>
+            <h3>تحميل مرئيات و صوتيات</h3>
             <p>قرأن, أفلام, مسلسلات.</p>
          </div>
 
-         <div class="box">
-            <img src="images/service-6.svg" alt="MEGA-services6.svg">
+         <div class="box" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+            <div class="icon">
+               <img src="images/service-6.svg" alt="خدمات حكومية">
+            </div>
             <h3>خدمات حكومية</h3>
             <p>التقديم علي الخدمات الحكومية.</p>
          </div>
 
-         <div class="box">
-            <img src="images/service-7.svg" alt="MEGA-services7.svg">
-            <h3>Scan و طباعة </h3>
+         <div class="box" data-aos="zoom-in" data-aos-duration="800">
+            <div class="icon">
+               <img src="images/service-7.svg" alt="Scan و طباعة">
+            </div>
+            <h3>Scan و طباعة</h3>
             <p>طباعة ملفات أبيض و أسود و ألوان.</p>
          </div>
 
-         <div class="box">
-            <img src="images/service-8.svg" alt="MEGA-services8.svg">
+         <div class="box" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+            <div class="icon">
+               <img src="images/service-8.svg" alt="لقاح كورونا">
+            </div>
             <h3>لقاح كورونا</h3>
             <p>التقديم علي جرعة لقاح كورونا.</p>
          </div>
 
-         <div class="box">
-            <img src="images/service-9.svg" alt="MEGA-services9.svg">
+         <div class="box" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+            <div class="icon">
+               <img src="images/service-9.svg" alt="NetCafe">
+            </div>
             <h3>NetCafe</h3>
             <p>لتجربة اللعب الافضل للالعاب الاونلاين.</p>
          </div>
-
       </div>
-
    </section>
+   <!-- Services Section Ends -->
 
-   <!-- services section ends -->
-
-   <div style="width: 100%; height: 180px "></div>
-
-   <!-- contact section starts  -->
-
+   <!-- Contact Section Starts -->
    <section class="contact" id="contact">
+      <h2 class="section-title"><span>تواصل</span> معانا</h2>
+      <p class="section-desc">يمكنك زيارتنا أو التواصل معنا عبر وسائل الاتصال المختلفة</p>
+      
+      <div class="contact-container">
+         <div class="map" data-aos="fade-up" data-aos-duration="1000">
+            <iframe
+               src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d700.3595990140142!2d29.821111769547286!3d31.13510389839955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDA4JzA2LjQiTiAyOcKwNDknMTguMyJF!5e1!3m2!1sen!2seg!4v1709989477731!5m2!1sen!2seg"
+               allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+         </div>
 
-      <h1 class="heading"> <span>تواصل</span> معانا </h1>
-
-      <div class="row">
-
-         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d700.3595990140142!2d29.821111769547286!3d31.13510389839955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDA4JzA2LjQiTiAyOcKwNDknMTguMyJF!5e1!3m2!1sen!2seg!4v1709989477731!5m2!1sen!2seg"
-            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+         <div class="contact-info-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <div class="contact-info-box">
+               <i class="fas fa-map-marker-alt"></i>
+               <div>
+                  <h3>العنوان</h3>
+                  <p>الدخيلة, بجوار فرع اورنج</p>
+               </div>
+            </div>
+            
+            <div class="contact-info-box">
+               <i class="fas fa-phone-alt"></i>
+               <div>
+                  <h3>رقم الهاتف</h3>
+                  <p><a href="tel:01551085617">01551085617</a></p>
+               </div>
+            </div>
+            
+            <div class="contact-info-box">
+               <i class="fas fa-envelope"></i>
+               <div>
+                  <h3>البريد الإلكتروني</h3>
+                  <p><a href="mailto:MegaRepair@gmail.com">MegaRepair@gmail.com</a></p>
+               </div>
+            </div>
+            
+            <div class="contact-info-box">
+               <i class="fas fa-clock"></i>
+               <div>
+                  <h3>ساعات العمل</h3>
+                  <p>كل يوم من 10 صباحاً حتى 10 مساءً</p>
+               </div>
+            </div>
+         </div>
       </div>
-
-
    </section>
+   <!-- Contact Section Ends -->
 
-   <!-- contact section ends -->
-
-   <!-- footer section starts  -->
-
-   <section class="footer">
-
+   <!-- Footer Section Starts -->
+   <footer class="footer">
       <div class="box-container">
-
-         <div class="box">
+         <div class="box" data-aos="fade-up" data-aos-duration="800">
             <h3>معلومات التواصل</h3>
-            <a href="tel:01551085612" class="link"> <i class="fas fa-phone"></i> 01551085617 </a>
-            <!--<a href="mailto:" class="link"> <i class="fas fa-envelope"></i> MegaRepair@gmail.com </a>-->
-            <a href="https://maps.app.goo.gl/eHS7sYtryB7iE7EZA" class="link" target="_blank"> <i class="fas fa-map"></i>
-               الدخيلة, بجوار فرع اورنج </a>
+            <a href="tel:01551085617" class="link"><i class="fas fa-phone-alt"></i> 01551085617</a>
+            <a href="mailto:MegaRepair@gmail.com" class="link"><i class="fas fa-envelope"></i> MegaRepair@gmail.com</a>
+            <a href="https://maps.app.goo.gl/eHS7sYtryB7iE7EZA" class="link" target="_blank"><i class="fas fa-map-marker-alt"></i> الدخيلة, بجوار فرع اورنج</a>
          </div>
 
-         <div class="box">
+         <div class="box" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
             <h3>شريط الوصول السريع</h3>
-            <a class="link" href="#home"> <i class="fas fa-angle-right"></i> الرئيسية</a>
-            <a class="link" href="#about"> <i class="fas fa-angle-right"></i> وصف الخدمة</a>
-            <a class="link" href="#services"> <i class="fas fa-angle-right"></i> خدماتنا</a>
-            <!--          <a class="link" href="#reviews"> <i class="fas fa-angle-right"></i> اراء العملاء</a> -->
-            <a class="link" href="#contact"> <i class="fas fa-angle-right"></i> تواصل معانا</a>
+            <a href="#home" class="link"><i class="fas fa-angle-left"></i> الرئيسية</a>
+            <a href="#about" class="link"><i class="fas fa-angle-left"></i> وصف الخدمة</a>
+            <a href="#services" class="link"><i class="fas fa-angle-left"></i> خدماتنا</a>
+            <a href="#contact" class="link"><i class="fas fa-angle-left"></i> تواصل معانا</a>
          </div>
 
-         <div class="box">
+         <div class="box" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
             <h3>عن المطور</h3>
-            <a href="https://msmelok.github.io/R4_2.0/" class="link" target="_blank"> <i class="fas fa-code"></i> مطور
-               الموقع </a>
+            <a href="https://msmelok.github.io/R4_2.0/" class="link" target="_blank"><i class="fas fa-code"></i> مطور الموقع</a>
+            <div class="social-links">
+               <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+               <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+               <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+               <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
          </div>
-
       </div>
 
-      <div class="credit">by <span>Mohammed Salah Ahmed</span> || all rights reserved</div>
+      <div class="credit">by <span>Muhammad Meluk</span> || all rights reserved</div>
+   </footer>
+   <!-- Footer Section Ends -->
 
-   </section>
+   <!-- Scroll To Top Button -->
+   <a href="#" class="scroll-top">
+      <i class="fas fa-arrow-up"></i>
+   </a>
 
-   <!-- footer section ends -->
-
-
+   <!-- JavaScript Libraries -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
 
-   <!-- custom js file link  -->
+   <!-- Custom JS file -->
    <script src="js/script.js"></script>
-
-   <script>
-      lightGallery(document.querySelector('.gallery .gallery-container'));
-   </script>
-
 </body>
 
 </html>
