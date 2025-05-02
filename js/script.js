@@ -132,15 +132,16 @@ serviceBoxes.forEach(box => {
 // Dark Mode Functionality
 // Initialize theme based on user preference or localStorage
 function initializeTheme() {
-  // Check if user has a saved preference
   const savedTheme = localStorage.getItem('theme');
-  
+
   if (savedTheme === 'dark') {
     document.documentElement.setAttribute('data-theme', 'dark');
     themeToggle.checked = true;
   } else {
+    // Default to light theme
     document.documentElement.setAttribute('data-theme', 'light');
     themeToggle.checked = false;
+    localStorage.setItem('theme', 'light'); // Optional: store default
   }
 }
 
