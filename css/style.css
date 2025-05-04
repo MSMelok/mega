@@ -739,7 +739,7 @@ input:checked + .slider .fa-sun {
 }
 
 .footer .credit span {
-  color: var(--accent-color);
+  color: #00c1c3;
 }
 
 /* Scroll To Top Button */
