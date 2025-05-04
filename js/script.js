@@ -138,10 +138,13 @@ function initializeTheme() {
     document.documentElement.setAttribute('data-theme', 'dark');
     themeToggle.checked = true;
   } else {
-    // Default to light theme
+    // If no theme saved or it's 'light', default to light
     document.documentElement.setAttribute('data-theme', 'light');
     themeToggle.checked = false;
-    localStorage.setItem('theme', 'light'); // Optional: store default
+
+    if (!savedTheme) {
+      localStorage.setItem('theme', 'light'); // Only set if not already set
+    }
   }
 }
 
