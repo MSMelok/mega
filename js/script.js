@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Update active nav link based on scroll position
   updateActiveNavLink();
-  
+
   // Set initial theme based on user preference or localStorage
   initializeTheme();
 });
@@ -50,12 +50,12 @@ navLinks.forEach(link => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     e.preventDefault();
-    
+
     const targetId = this.getAttribute('href');
     if (targetId === '#') return;
-    
+
     const targetSection = document.querySelector(targetId);
-    
+
     if (targetSection) {
       window.scrollTo({
         top: targetSection.offsetTop - 100,
@@ -73,10 +73,10 @@ window.addEventListener('scroll', () => {
   } else {
     scrollTopBtn.classList.remove('active');
   }
-  
+
   // Update active nav link
   updateActiveNavLink();
-  
+
   // Header shadow on scroll
   if (window.scrollY > 0) {
     document.querySelector('.header').style.boxShadow = '0 0.5rem 1.5rem rgba(0, 0, 0, 0.1)';
@@ -100,12 +100,12 @@ if (scrollTopBtn) {
 function updateActiveNavLink() {
   const sections = document.querySelectorAll('section');
   const scrollPosition = window.scrollY;
-  
+
   sections.forEach(section => {
     const sectionTop = section.offsetTop - 150;
     const sectionHeight = section.offsetHeight;
     const sectionId = section.getAttribute('id');
-    
+
     if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
       navLinks.forEach(link => {
         link.classList.remove('active');
@@ -123,7 +123,7 @@ serviceBoxes.forEach(box => {
   box.addEventListener('mouseenter', () => {
     box.style.transform = 'translateY(-10px)';
   });
-  
+
   box.addEventListener('mouseleave', () => {
     box.style.transform = 'translateY(0)';
   });

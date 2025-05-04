@@ -18,7 +18,7 @@
   --border-radius: 10px;
   --transition: all 0.3s ease;
   --spacing: 8rem;
-  
+
   /* Light mode (default) */
   --body-bg: #f8f9fa;
   --header-bg: #ffffff;
@@ -85,15 +85,15 @@
   --text-light: #d0d0d0;
   --dark-color: #ffffff;
   --shadow-color: rgba(0, 0, 0, 0.3);
-  
+
   /* Override specific element colors for dark mode */
   --contact-info-bg: rgba(0, 0, 0, 0.2);
-  
+
   /* Scrollbar colors for dark mode */
   --scrollbar-track: #242424;
   --scrollbar-thumb: #7411f7;
   --scrollbar-thumb-hover: #00d9ff;
-  
+
   /* Update scrollbar colors in dark mode */
   scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
 }
